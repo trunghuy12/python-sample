@@ -1,0 +1,45 @@
+### /
+get http://127.0.0.1:5000/ HTTP/1.2
+User-Agent: aaa
+
+### get /about
+get http://127.0.0.1:5000/about HTTP/1.2
+User-Agent: aaa
+
+### post /about
+post http://127.0.0.1:5000/about HTTP/1.2
+User-Agent: aaa
+
+
+### post /example
+POST http://127.0.0.1:5000/example HTTP/1.1
+
+
+### get /hello/xx
+get http://127.0.0.1:5000/hello/xxx-dd-kh HTTP/1.2
+User-Agent: aaa
+
+
+### get /t1
+get http://127.0.0.1:5000/t1 HTTP/1.2
+User-Agent: aaa
+
+
+### get /add_stock
+get http://127.0.0.1:5000/add_stock HTTP/1.2
+User-Agent: aaa
+
+
+
+### post /add_stock
+POST http://127.0.0.1:5000/add_stock HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Content-Type: application/x-www-form-urlencoded
+
+stock_symbol=BaB&number_of_shares=1&purchase_price=32
+
+
+
+### get /stocks
+get http://127.0.0.1:5000/stocks HTTP/1.1
