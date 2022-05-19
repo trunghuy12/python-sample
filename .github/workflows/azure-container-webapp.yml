@@ -14,11 +14,11 @@ jobs:
 
       - name: Log in to GitHub container registry
         uses: azure/docker-login@v1
-        with:          
+        with:  
+          login-server: huybtregistry.azurecr.io
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          login-server: huybtregistry.azurecr.io
-          
+                   
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
@@ -32,6 +32,6 @@ jobs:
       - name: Deploy app 
         uses: azure/webapps-deploy@v2
         with:
-            app-name: 'webapp-huybt'
+            app-name: webapp-huybt
             publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-            images: 'huybtregistry.azurecr.io/webapp:latest'
+            images: huybtregistry.azurecr.io/webapp:latest
