@@ -22,8 +22,8 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
       - run: |
-          docker build . -t huybtregistry.azurecr.io/webapp:lastest
-          docker push huybtregistry.azurecr.io/webapp:lastest
+          docker build . -t huybtregistry.azurecr.io/webapp:latest
+          docker push huybtregistry.azurecr.io/webapp:latest
         
       - name: Deploy app to webbapp
         uses: azure/webapps-deploy@v2
