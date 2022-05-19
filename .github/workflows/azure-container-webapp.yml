@@ -29,7 +29,7 @@ jobs:
           tags: huybtregistry.azurecr.io/webapp:latest
           file: ./Dockerfile
           
-      - name: Deploy app 
+      - name: Deploy app to webbapp
         uses: azure/webapps-deploy@v2
         with:
             app-name: webapp-huybt
