@@ -16,7 +16,7 @@ jobs:
         uses: azure/docker-login@v1
         with:          
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSSWORD }}
+          password: ${{ secrets.PASSWORD }}
           login-server: huybtregistry.azurecr.io
           
       - name: Set up Docker Buildx
