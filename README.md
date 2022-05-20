@@ -11,7 +11,7 @@
 - Templates
 - Forms
 - Sessions
-- Testing with pytest
+- Testing withq pytest
 - Static Files
 - Flask Messages
 - Logging
