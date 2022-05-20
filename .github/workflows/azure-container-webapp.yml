@@ -25,7 +25,7 @@ jobs:
           docker build . -t huybtregistry.azurecr.io/webapp:latest
           docker push huybtregistry.azurecr.io/webapp:latest
         
-      - name: Deploy app to webbapp
+      - name: Deploy app to webbappa
         uses: azure/webapps-deploy@v2
         with:
             app-name: webapp-huybt
