@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Log in to GitHub container registry
+      - name: Log in to azure container registry
         uses: azure/docker-login@v1
         with:  
           login-server: tgwebapp.azurecr.io
